@@ -2,7 +2,7 @@
 
 Welcome to the **Relationship Compatibility Test**, a comprehensive web application designed to help you evaluate the potential success of your relationship. By assessing 25 key attributes, this tool provides insights into the strengths and areas for improvement in your partnership.
 
-![Compatibility Test Screenshot](screenshot.png)
+![Compatibility Test Screenshot](images/home.png)
 
 ## 🌟 Features
 
@@ -44,21 +44,16 @@ Welcome to the **Relationship Compatibility Test**, a comprehensive web applicat
 /compatibility
 ├── css/
 │   └── styles.css
-├── js/
-│   └── script.js
 ├── index.html
-├── instructions.html
-├── checklist.html
-├── result.html
 └── README.md
 ```
 
 - **index.html**: Main entry point containing the common layout.
-- **instructions.html**: Contains the instructions tab content.
+<!-- - **instructions.html**: Contains the instructions tab content.
 - **checklist.html**: Contains the checklist form with all attributes.
-- **result.html**: Displays the results and interpretations.
+- **result.html**: Displays the results and interpretations. -->
 - **styles.css**: Contains all the styling using CSS variables and shadcn color palette.
-- **script.js**: Handles tab navigation, dynamic content loading, form validation, and result calculations.
+<!-- - **script.js**: Handles tab navigation, dynamic content loading, form validation, and result calculations. -->
 - **README.md**: Project documentation.
 
 ## 📖 Usage Guide
@@ -149,7 +144,7 @@ This project is licensed under the [MIT License](LICENSE), meaning you can use, 
 For questions, suggestions, or feedback, please contact:
 
 - **Name**: Abhisek Jha
-- **Email**: [abhisekjha@gmail.com](mailto:abhisekjha@gmail.com)
+- **Email**: [abhisekjha@gmail.com](mailto:abhisekjha2020@gmail.com)
 - **GitHub**: [abhisekjha](https://github.com/abhisekjha)
 
 ---
@@ -177,15 +172,15 @@ For questions, suggestions, or feedback, please contact:
 
 ### Instructions Tab
 
-![Instructions Tab](screenshots/instructions_tab.png)
+![Instructions Tab](images/instructions_tab.png)
 
 ### Checklist Tab
 
-![Checklist Tab](screenshots/checklist_tab.png)
+![Checklist Tab](images/checklist_tab.png)
 
 ### Result Tab
 
-![Result Tab](screenshots/result_tab.png)
+![Result Tab](images/result_tab.png)
 
 ---
 
