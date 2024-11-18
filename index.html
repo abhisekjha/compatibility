@@ -619,97 +619,195 @@
 
       let interpretationText = '';
 
-      if (totalScore >= 80) {
+    if (totalScore >= 80) {
   interpretationText = `
-    <strong>Very High Compatibility</strong>: 
-    Your relationship exhibits exceptional harmony and alignment. You and your partner share core values, mutual respect, and a deep emotional connection. As Aristotle once said, "<em>Love is composed of a single soul inhabiting two bodies.</em>"
-
-    <br/><br/>
-    <strong>Validation:</strong> Your high score reflects strong compatibility across critical areas like shared goals, communication styles, and emotional intimacy. This suggests a solid foundation for a lasting and fulfilling partnership.
-
-    <br/><br/>
-    <strong>Next Steps:</strong>
-    - <strong>Celebrate Your Connection:</strong> Acknowledge and appreciate the strengths in your relationship.
-    - <strong>Nurture Growth Together:</strong> Continue exploring new experiences that bring you closer.
-    - <strong>Maintain Open Communication:</strong> Keep the dialogue open to address any minor issues proactively.
-
-    <br/>
-    <strong>Tip:</strong> Leverage your strong bond to support each other's personal growth. Remember, "<em>The best thing to hold onto in life is each other.</em>" – Audrey Hepburn.
-
-    <br/><br/>
-    <strong>Reflection:</strong> Consider journaling about what makes your relationship special. This can deepen your appreciation and provide a joyful record to look back on.
+    <strong>🌟 Very High Compatibility</strong>
+    <ul>
+      <li>💖 <strong>Strengths:</strong>
+        <ul>
+          <li>Aligned core values and beliefs</li>
+          <li>Deep emotional connection</li>
+          <li>Excellent communication</li>
+        </ul>
+      </li>
+      <li>🌱 <strong>Next Steps:</strong>
+        <ul>
+          <li>Continue nurturing your relationship</li>
+          <li>Explore new experiences together</li>
+          <li>Maintain open and honest communication</li>
+        </ul>
+      </li>
+      <li>💡 <strong>Tip:</strong> Cherish your strong bond and support each other's growth.</li>
+    </ul>
   `;
+  interpretationText += `
+  <div class="quote-section">
+    <blockquote>"${getMotivationalQuote(totalScore)}"</blockquote>
+  </div>
+`;
+interpretationText += `
+  <div class="recommendations">
+    <h3>📚 Recommendations:</h3>
+    <ul>
+      ${getRecommendations(totalScore)}
+    </ul>
+  </div>
+`;
 } else if (totalScore >= 60) {
   interpretationText = `
-    <strong>High Compatibility</strong>: 
-    Your relationship has a strong potential with several key strengths. However, there are areas that may require attention. As Friedrich Nietzsche noted, "<em>It is not a lack of love, but a lack of friendship that makes unhappy marriages.</em>"
-
-    <br/><br/>
-    <strong>Validation:</strong> Your score indicates good alignment in many aspects, but also highlights moderate differences that could lead to misunderstandings if left unaddressed.
-
-    <br/><br/>
-    <strong>Next Steps:</strong>
-    - <strong>Identify Areas for Improvement:</strong> Reflect on the attributes where you scored lower.
-    - <strong>Engage in Honest Conversations:</strong> Discuss these areas openly with your partner.
-    - <strong>Seek Mutual Compromise:</strong> Work together to find solutions that satisfy both of you.
-
-    <br/>
-    <strong>Tip:</strong> Strengthen your friendship and understanding. "<em>A great relationship is about two things: First, appreciating the similarities, and second, respecting the differences.</em>" – Unknown.
-
-    <br/><br/>
-    <strong>Reflection:</strong> Plan activities that foster connection, such as attending a workshop or embarking on a shared hobby.
-
-    <br/>
-    <strong>Validation:</strong> It's normal for couples to have differences. Acknowledging and addressing them is a sign of a mature and resilient relationship.
+    <strong>👍 High Compatibility</strong>
+    <ul>
+      <li>✨ <strong>Strengths:</strong>
+        <ul>
+          <li>Shared interests and goals</li>
+          <li>Good communication</li>
+          <li>Mutual respect</li>
+        </ul>
+      </li>
+      <li>🛠 <strong>Areas to Improve:</strong>
+        <ul>
+          <li>Address moderate differences</li>
+          <li>Work on compromise and understanding</li>
+        </ul>
+      </li>
+      <li>🌱 <strong>Next Steps:</strong>
+        <ul>
+          <li>Have open discussions about your differences</li>
+          <li>Engage in activities that strengthen your bond</li>
+        </ul>
+      </li>
+      <li>💡 <strong>Tip:</strong> Embrace your similarities and respect your differences to grow together.</li>
+    </ul>
   `;
+  interpretationText += `
+  <div class="quote-section">
+    <blockquote>"${getMotivationalQuote(totalScore)}"</blockquote>
+  </div>
+`;
+interpretationText += `
+  <div class="recommendations">
+    <h3>📚 Recommendations:</h3>
+    <ul>
+      ${getRecommendations(totalScore)}
+    </ul>
+  </div>
+`;
 } else if (totalScore >= 40) {
   interpretationText = `
-    <strong>Moderate Compatibility</strong>: 
-    Your relationship shows potential but also significant challenges. As Dr. John Gottman, a renowned relationship expert, emphasizes, "<em>Successful long-term relationships are created through small words, small gestures, and small acts.</em>"
-
-    <br/><br/>
-    <strong>Validation:</strong> The score reflects notable differences in critical areas which may lead to conflicts. This doesn't mean the relationship cannot work, but it will require conscious effort from both parties.
-
-    <br/><br/>
-    <strong>Next Steps:</strong>
-    - <strong>Open Dialogue:</strong> Initiate conversations about your concerns in a non-confrontational manner.
-    - <strong>Understand Each Other's Perspectives:</strong> Try to see things from your partner's point of view.
-    - <strong>Consider Professional Guidance:</strong> A counselor or therapist can provide tools to navigate complex issues.
-
-    <br/>
-    <strong>Tip:</strong> Focus on building empathy and connection. Remember, "<em>Coming together is a beginning; keeping together is progress; working together is success.</em>" – Henry Ford.
-
-    <br/><br/>
-    <strong>Reflection:</strong> Assess whether your individual needs and goals can align over time with mutual effort.
-
-    <br/>
-    <strong>Validation:</strong> Facing challenges is an opportunity for growth. With dedication, many couples strengthen their bonds through adversity.
+    <strong>⚠️ Moderate Compatibility</strong>
+    <ul>
+      <li>🔍 <strong>Challenges:</strong>
+        <ul>
+          <li>Notable differences in key areas</li>
+          <li>Potential for misunderstandings</li>
+        </ul>
+      </li>
+      <li>🛠 <strong>Areas to Improve:</strong>
+        <ul>
+          <li>Identify key concerns</li>
+          <li>Work on communication and compromise</li>
+        </ul>
+      </li>
+      <li>🌱 <strong>Next Steps:</strong>
+        <ul>
+          <li>Discuss whether differences can be reconciled</li>
+          <li>Consider seeking professional guidance</li>
+        </ul>
+      </li>
+      <li>💡 <strong>Tip:</strong> Open dialogue is essential. Understanding each other's perspectives can bridge gaps.</li>
+    </ul>
   `;
+  interpretationText += `
+  <div class="quote-section">
+    <blockquote>"${getMotivationalQuote(totalScore)}"</blockquote>
+  </div>
+`;
+interpretationText += `
+  <div class="recommendations">
+    <h3>📚 Recommendations:</h3>
+    <ul>
+      ${getRecommendations(totalScore)}
+    </ul>
+  </div>
+`;
 } else {
   interpretationText = `
-    <strong>Low Compatibility</strong>: 
-    Your relationship faces substantial challenges that could impact its longevity. As Maya Angelou wisely said, "<em>Never make someone a priority when all you are to them is an option.</em>"
-
-    <br/><br/>
-    <strong>Validation:</strong> The low score indicates significant misalignments in values, goals, or communication styles. It's important to honestly assess whether these differences are reconcilable.
-
-    <br/><br/>
-    <strong>Next Steps:</strong>
-    - <strong>Self-Reflection:</strong> Evaluate what you truly want and need in a relationship.
-    - <strong>Honest Conversation:</strong> Discuss your feelings and concerns with your partner openly.
-    - <strong>Assess Compatibility:</strong> Determine if both of you are willing and able to work on the relationship.
-
-    <br/>
-    <strong>Tip:</strong> Prioritize your well-being. "<em>Respect yourself enough to walk away from anything that no longer serves you, grows you, or makes you happy.</em>" – Robert Tew.
-
-    <br/><br/>
-    <strong>Reflection:</strong> Consider speaking with a trusted friend or counselor to gain additional perspective.
-
-    <br/>
-    <strong>Validation:</strong> Acknowledging difficulties is a courageous first step. Remember that you deserve a relationship that brings joy and fulfillment.
+    <strong>❌ Low Compatibility</strong>
+    <ul>
+      <li>🔍 <strong>Challenges:</strong>
+        <ul>
+          <li>Significant differences in core values and goals</li>
+          <li>Communication barriers</li>
+        </ul>
+      </li>
+      <li>🛠 <strong>Considerations:</strong>
+        <ul>
+          <li>Are differences deal-breakers?</li>
+          <li>Impact on long-term happiness</li>
+        </ul>
+      </li>
+      <li>🌱 <strong>Next Steps:</strong>
+        <ul>
+          <li>Reflect on your relationship goals</li>
+          <li>Have an honest conversation with your partner</li>
+          <li>Seek professional advice if needed</li>
+        </ul>
+      </li>
+      <li>💡 <strong>Tip:</strong> Prioritize your well-being and consider what's best for your future.</li>
+    </ul>
   `;
+  interpretationText += `
+  <div class="quote-section">
+    <blockquote>"${getMotivationalQuote(totalScore)}"</blockquote>
+  </div>
+`;
+interpretationText += `
+  <div class="recommendations">
+    <h3>📚 Recommendations:</h3>
+    <ul>
+      ${getRecommendations(totalScore)}
+    </ul>
+  </div>
+`;
 }
 
+
+
+
+function getMotivationalQuote(score) {
+  if (score >= 80) {
+    return "Love is composed of a single soul inhabiting two bodies. – Aristotle";
+  } else if (score >= 60) {
+    return "A great relationship is about two things: First, appreciating the similarities, and second, respecting the differences. – Unknown";
+  } else if (score >= 40) {
+    return "The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed. – Carl Jung";
+  } else {
+    return "Don't settle for a relationship that won't let you be yourself. – Oprah Winfrey";
+  }
+}
+function getRecommendations(score) {
+  if (score >= 80) {
+    return `
+      <li>Plan a special date night to celebrate your connection.</li>
+      <li>Consider setting new shared goals or adventures.</li>
+    `;
+  } else if (score >= 60) {
+    return `
+      <li>Schedule regular check-ins to discuss your relationship.</li>
+      <li>Read a book on strengthening communication in relationships.</li>
+    `;
+  } else if (score >= 40) {
+    return `
+      <li>Consider attending a couples workshop or seminar.</li>
+      <li>Explore resources on conflict resolution and understanding.</li>
+    `;
+  } else {
+    return `
+      <li>Reflect on your personal needs and goals.</li>
+      <li>Seek advice from a trusted counselor or relationship expert.</li>
+    `;
+  }
+}
 
       document.getElementById('interpretation').innerHTML = interpretationText;
 

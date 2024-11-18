@@ -341,4 +341,42 @@ footer p {
   .result-content p {
     margin-top: 1rem;
   }
-  
+ /* Quote Section */
+.quote-section {
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: var(--muted-foreground);
+  text-align: center;
+}
+
+.quote-section blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+.quote-section blockquote:before {
+  content: open-quote;
+}
+
+.quote-section blockquote:after {
+  content: close-quote;
+}
+
+/* Recommendations */
+.recommendations {
+  margin-top: 1.5rem;
+}
+
+.recommendations h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.recommendations ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.recommendations li {
+  margin-bottom: 0.5rem;
+}
+ 
