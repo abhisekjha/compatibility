@@ -144,7 +144,7 @@ This project is licensed under the [MIT License](LICENSE), meaning you can use, 
 For questions, suggestions, or feedback, please contact:
 
 - **Name**: Abhisek Jha
-- **Email**: [abhisekjha@gmail.com](mailto:abhisekjha2020@gmail.com)
+- **Email**: [abhisekjha2020@gmail.com](mailto:abhisekjha2020@gmail.com)
 - **GitHub**: [abhisekjha](https://github.com/abhisekjha)
 
 ---
