@@ -547,7 +547,7 @@
         </div>
       </div>
       <!-- Score Text -->
-      <h2>Your Total Score: <span id="total-score"></span>/100</h2>
+      <h2>Your Total Score: <span id="total-score"></span> out of 100</h2>
       <p id="interpretation"></p>
     </div>
   </section>
@@ -571,23 +571,17 @@
       button.addEventListener('click', () => {
         const targetTab = button.getAttribute('data-tab');
 
-        // Remove active class from all buttons
         tabButtons.forEach(btn => btn.classList.remove('active'));
 
-        // Hide all tab contents
         tabContents.forEach(content => content.classList.remove('active'));
 
-        // Add active class to clicked button
         button.classList.add('active');
 
-        // Show the target tab content
         document.getElementById(targetTab).classList.add('active');
       });
     });
 
-    // Existing JavaScript code for progress indicator and calculation
 
-    // Update progress indicator on input
     document.getElementById('compatibility-form').addEventListener('input', function() {
       let completed = 0;
       let numAttributes = 25;
@@ -607,7 +601,6 @@
       let totalScore = 0;
       let numAttributes = 25;
 
-      // Loop through each attribute
       for (let i = 1; i <= numAttributes; i++) {
         let selectElement = document.getElementById('attribute' + i);
         let value = parseInt(selectElement.value);
@@ -624,35 +617,111 @@
       // Display the total score
       document.getElementById('total-score').innerText = totalScore;
 
-      // Provide interpretation
       let interpretationText = '';
 
       if (totalScore >= 80) {
-        interpretationText = `<strong>Very High Compatibility</strong>: Excellent potential for a successful and fulfilling relationship. Continue nurturing the relationship and enjoy your strong connection.`;
-      } else if (totalScore >= 60) {
-        interpretationText = `<strong>High Compatibility</strong>: Good potential, with some areas to work on. Address the moderate differences through open communication and compromise.`;
-      } else if (totalScore >= 40) {
-        interpretationText = `<strong>Moderate Compatibility</strong>: The relationship may require significant effort to succeed. Identify key areas of concern and discuss whether they can be reconciled.`;
-      } else {
-        interpretationText = `<strong>Low Compatibility</strong>: Potential challenges that could hinder long-term success. Consider whether the differences are deal-breakers and if professional guidance might help.`;
-      }
+  interpretationText = `
+    <strong>Very High Compatibility</strong>: 
+    Your relationship exhibits exceptional harmony and alignment. You and your partner share core values, mutual respect, and a deep emotional connection. As Aristotle once said, "<em>Love is composed of a single soul inhabiting two bodies.</em>"
+
+    <br/><br/>
+    <strong>Validation:</strong> Your high score reflects strong compatibility across critical areas like shared goals, communication styles, and emotional intimacy. This suggests a solid foundation for a lasting and fulfilling partnership.
+
+    <br/><br/>
+    <strong>Next Steps:</strong>
+    - <strong>Celebrate Your Connection:</strong> Acknowledge and appreciate the strengths in your relationship.
+    - <strong>Nurture Growth Together:</strong> Continue exploring new experiences that bring you closer.
+    - <strong>Maintain Open Communication:</strong> Keep the dialogue open to address any minor issues proactively.
+
+    <br/>
+    <strong>Tip:</strong> Leverage your strong bond to support each other's personal growth. Remember, "<em>The best thing to hold onto in life is each other.</em>" – Audrey Hepburn.
+
+    <br/><br/>
+    <strong>Reflection:</strong> Consider journaling about what makes your relationship special. This can deepen your appreciation and provide a joyful record to look back on.
+  `;
+} else if (totalScore >= 60) {
+  interpretationText = `
+    <strong>High Compatibility</strong>: 
+    Your relationship has a strong potential with several key strengths. However, there are areas that may require attention. As Friedrich Nietzsche noted, "<em>It is not a lack of love, but a lack of friendship that makes unhappy marriages.</em>"
+
+    <br/><br/>
+    <strong>Validation:</strong> Your score indicates good alignment in many aspects, but also highlights moderate differences that could lead to misunderstandings if left unaddressed.
+
+    <br/><br/>
+    <strong>Next Steps:</strong>
+    - <strong>Identify Areas for Improvement:</strong> Reflect on the attributes where you scored lower.
+    - <strong>Engage in Honest Conversations:</strong> Discuss these areas openly with your partner.
+    - <strong>Seek Mutual Compromise:</strong> Work together to find solutions that satisfy both of you.
+
+    <br/>
+    <strong>Tip:</strong> Strengthen your friendship and understanding. "<em>A great relationship is about two things: First, appreciating the similarities, and second, respecting the differences.</em>" – Unknown.
+
+    <br/><br/>
+    <strong>Reflection:</strong> Plan activities that foster connection, such as attending a workshop or embarking on a shared hobby.
+
+    <br/>
+    <strong>Validation:</strong> It's normal for couples to have differences. Acknowledging and addressing them is a sign of a mature and resilient relationship.
+  `;
+} else if (totalScore >= 40) {
+  interpretationText = `
+    <strong>Moderate Compatibility</strong>: 
+    Your relationship shows potential but also significant challenges. As Dr. John Gottman, a renowned relationship expert, emphasizes, "<em>Successful long-term relationships are created through small words, small gestures, and small acts.</em>"
+
+    <br/><br/>
+    <strong>Validation:</strong> The score reflects notable differences in critical areas which may lead to conflicts. This doesn't mean the relationship cannot work, but it will require conscious effort from both parties.
+
+    <br/><br/>
+    <strong>Next Steps:</strong>
+    - <strong>Open Dialogue:</strong> Initiate conversations about your concerns in a non-confrontational manner.
+    - <strong>Understand Each Other's Perspectives:</strong> Try to see things from your partner's point of view.
+    - <strong>Consider Professional Guidance:</strong> A counselor or therapist can provide tools to navigate complex issues.
+
+    <br/>
+    <strong>Tip:</strong> Focus on building empathy and connection. Remember, "<em>Coming together is a beginning; keeping together is progress; working together is success.</em>" – Henry Ford.
+
+    <br/><br/>
+    <strong>Reflection:</strong> Assess whether your individual needs and goals can align over time with mutual effort.
+
+    <br/>
+    <strong>Validation:</strong> Facing challenges is an opportunity for growth. With dedication, many couples strengthen their bonds through adversity.
+  `;
+} else {
+  interpretationText = `
+    <strong>Low Compatibility</strong>: 
+    Your relationship faces substantial challenges that could impact its longevity. As Maya Angelou wisely said, "<em>Never make someone a priority when all you are to them is an option.</em>"
+
+    <br/><br/>
+    <strong>Validation:</strong> The low score indicates significant misalignments in values, goals, or communication styles. It's important to honestly assess whether these differences are reconcilable.
+
+    <br/><br/>
+    <strong>Next Steps:</strong>
+    - <strong>Self-Reflection:</strong> Evaluate what you truly want and need in a relationship.
+    - <strong>Honest Conversation:</strong> Discuss your feelings and concerns with your partner openly.
+    - <strong>Assess Compatibility:</strong> Determine if both of you are willing and able to work on the relationship.
+
+    <br/>
+    <strong>Tip:</strong> Prioritize your well-being. "<em>Respect yourself enough to walk away from anything that no longer serves you, grows you, or makes you happy.</em>" – Robert Tew.
+
+    <br/><br/>
+    <strong>Reflection:</strong> Consider speaking with a trusted friend or counselor to gain additional perspective.
+
+    <br/>
+    <strong>Validation:</strong> Acknowledging difficulties is a courageous first step. Remember that you deserve a relationship that brings joy and fulfillment.
+  `;
+}
+
 
       document.getElementById('interpretation').innerHTML = interpretationText;
 
-      // Switch to Result tab
       document.querySelector('.tab-button[data-tab="result"]').click();
     });
 
-    // Reset functionality
     document.getElementById('reset-button').addEventListener('click', function() {
-      // Hide the result section
       document.getElementById('total-score').innerText = '';
       document.getElementById('interpretation').innerText = '';
 
-      // Reset progress indicator
       document.getElementById('progress').innerText = "You've completed 0 out of 25 attributes.";
 
-      // Switch to Instructions tab
       document.querySelector('.tab-button[data-tab="instructions"]').click();
     });
   </script>
