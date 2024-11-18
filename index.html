@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Relationship Compatibility Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO Optimization -->
+  <meta name="description" content="Assess your relationship compatibility with our comprehensive checklist and interactive scoring system." />
+  <meta name="keywords" content="relationship, compatibility, checklist, assessment, love, partnership" />
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>Relationship Compatibility Test</h1>
+      <p>Evaluate your compatibility and assess the potential success of your relationship.</p>
+    </div>
+  </header>
+
+  <!-- Tab Navigation -->
+  <nav class="tab-nav">
+    <div class="container">
+      <button class="tab-button active" data-tab="instructions" tabindex="0">Instructions</button>
+      <button class="tab-button" data-tab="checklist" tabindex="0">Checklist</button>
+      <button class="tab-button" data-tab="result" tabindex="0">Result</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Instructions Tab Panel -->
+    <section id="instructions" class="tab-content active">
+      <!-- Instructions Content -->
+      <!-- (Move your existing instructions content here) -->
+      <section class="instructions">
+        <h2>How to Use This Checklist</h2>
+        <p>
+          For each of the 25 attributes below, rate your compatibility on a scale of <strong>1 to 4</strong>:
+        </p>
+        <ul>
+          <li><strong>1 (Low Compatibility)</strong>: Significant differences that could cause conflict.</li>
+          <li><strong>2 (Moderate Compatibility)</strong>: Some differences, but manageable with effort.</li>
+          <li><strong>3 (High Compatibility)</strong>: Generally aligned with minor differences.</li>
+          <li><strong>4 (Very High Compatibility)</strong>: Strong alignment and mutual understanding.</li>
+        </ul>
+        <p>After rating each attribute, click the "Calculate Score" button to assess the potential success of your relationship.</p>
+      </section>
+    </section>
+
+    <!-- Checklist Tab Panel -->
+    <section id="checklist" class="tab-content">
+      <!-- Progress Indicator -->
+      <div id="progress" class="progress">You've completed 0 out of 25 attributes.</div>
+
+      <!-- Checklist Form -->
+      <form id="compatibility-form">
+        <div class="attribute">
+            <h3>1. Shared Core Values</h3>
+            <ul>
+              <li><strong>Life Priorities</strong>: Do you both prioritize similar aspects of life (e.g., family, career, spirituality, adventure)?</li>
+              <li><strong>Moral and Ethical Alignment</strong>: Are your moral compasses aligned? Do you agree on fundamental issues?</li>
+            </ul>
+            <label for="attribute1">Your Rating:</label>
+            <select id="attribute1" name="attribute1" required>
+              <option value="" disabled selected>Select</option>
+              <option value="1">1 - Low Compatibility</option>
+              <option value="2">2 - Moderate Compatibility</option>
+              <option value="3">3 - High Compatibility</option>
+              <option value="4">4 - Very High Compatibility</option>
+            </select>
+          </div>
+    
+          <!-- Attributes 2 to 25 -->
+    
+                <!-- Attribute 2 -->
+                <div class="attribute">
+                    <h3>2. Emotional Compatibility</h3>
+                    <ul>
+                      <li><strong>Open Communication</strong>: Can you both communicate openly and honestly?</li>
+                      <li><strong>Emotional Support</strong>: Does she make you feel emotionally safe and understood?</li>
+                      <li><strong>Empathy</strong>: Is she able to understand and share your feelings?</li>
+                    </ul>
+                    <label for="attribute2">Your Rating:</label>
+                    <select id="attribute2" name="attribute2" required>
+                      <option value="" disabled selected>Select</option>
+                      <option value="1">1 - Low Compatibility</option>
+                      <option value="2">2 - Moderate Compatibility</option>
+                      <option value="3">3 - High Compatibility</option>
+                      <option value="4">4 - Very High Compatibility</option>
+                    </select>
+                  </div>
+            
+                  <!-- Continue with attributes 3 to 25... -->
+                  <!-- For brevity, I'll include attributes 3 to 5 as examples. Please copy and adjust the code for attributes 6 to 25 accordingly. -->
+            
+                  <!-- Attribute 3 -->
+                  <div class="attribute">
+                    <h3>3. Mutual Respect</h3>
+                    <ul>
+                      <li><strong>Respect for Opinions</strong>: Does she respect your opinions, choices, and boundaries?</li>
+                      <li><strong>Value in Relationship</strong>: Do you feel respected and valued in the relationship?</li>
+                      <li><strong>Equality</strong>: Is there a balance in giving and taking?</li>
+                    </ul>
+                    <label for="attribute3">Your Rating:</label>
+                    <select id="attribute3" name="attribute3" required>
+                      <option value="" disabled selected>Select</option>
+                      <option value="1">1 - Low Compatibility</option>
+                      <option value="2">2 - Moderate Compatibility</option>
+                      <option value="3">3 - High Compatibility</option>
+                      <option value="4">4 - Very High Compatibility</option>
+                    </select>
+                  </div>
+            
+                  <!-- Attribute 4 -->
+                  <div class="attribute">
+                    <h3>4. Shared Interests and Activities</h3>
+                    <ul>
+                      <li><strong>Common Hobbies</strong>: Do you enjoy similar activities?</li>
+                      <li><strong>Willingness to Explore</strong>: Is she open to trying things you enjoy and vice versa?</li>
+                      <li><strong>Quality Time</strong>: Do you both value spending time together?</li>
+                    </ul>
+                    <label for="attribute4">Your Rating:</label>
+                    <select id="attribute4" name="attribute4" required>
+                      <option value="" disabled selected>Select</option>
+                      <option value="1">1 - Low Compatibility</option>
+                      <option value="2">2 - Moderate Compatibility</option>
+                      <option value="3">3 - High Compatibility</option>
+                      <option value="4">4 - Very High Compatibility</option>
+                    </select>
+                  </div>
+            
+                  <!-- Attribute 5 -->
+                  <div class="attribute">
+                    <h3>5. Future Goals and Vision</h3>
+                    <ul>
+                      <li><strong>Life Goals Alignment</strong>: Do you have similar goals for the future (e.g., marriage, children, lifestyle)?</li>
+                      <li><strong>Financial Objectives</strong>: Are your financial goals and spending habits compatible?</li>
+                      <li><strong>Career Aspirations</strong>: Do your career plans complement each other?</li>
+                    </ul>
+                    <label for="attribute5">Your Rating:</label>
+                    <select id="attribute5" name="attribute5" required>
+                      <option value="" disabled selected>Select</option>
+                      <option value="1">1 - Low Compatibility</option>
+                      <option value="2">2 - Moderate Compatibility</option>
+                      <option value="3">3 - High Compatibility</option>
+                      <option value="4">4 - Very High Compatibility</option>
+                    </select>
+                  </div>
+            
+                  <!-- Attribute 6 -->
+            <div class="attribute">
+                <h3>6. Intellectual Connection</h3>
+                <ul>
+                  <li><strong>Stimulating Conversations</strong>: Can you have meaningful and engaging conversations?</li>
+                  <li><strong>Intellectual Growth</strong>: Does she challenge you intellectually and inspire growth?</li>
+                  <li><strong>Shared Curiosity</strong>: Do you both have a desire to learn and explore?</li>
+                </ul>
+                <label for="attribute6">Your Rating:</label>
+                <select id="attribute6" name="attribute6" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 7 -->
+              <div class="attribute">
+                <h3>7. Physical and Romantic Attraction</h3>
+                <ul>
+                  <li><strong>Chemistry</strong>: Are you physically attracted to her?</li>
+                  <li><strong>Affection</strong>: Do you feel comfortable expressing affection?</li>
+                  <li><strong>Intimacy Needs</strong>: Are your expectations regarding intimacy aligned?</li>
+                </ul>
+                <label for="attribute7">Your Rating:</label>
+                <select id="attribute7" name="attribute7" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 8 -->
+              <div class="attribute">
+                <h3>8. Sense of Humor</h3>
+                <ul>
+                  <li><strong>Shared Laughter</strong>: Can she make you laugh, and can you laugh together?</li>
+                  <li><strong>Appreciation</strong>: Does she appreciate your sense of humor?</li>
+                  <li><strong>Playfulness</strong>: Is there a light-hearted and fun dynamic?</li>
+                </ul>
+                <label for="attribute8">Your Rating:</label>
+                <select id="attribute8" name="attribute8" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 9 -->
+              <div class="attribute">
+                <h3>9. Emotional Maturity</h3>
+                <ul>
+                  <li><strong>Conflict Resolution</strong>: Can she handle conflicts calmly and constructively?</li>
+                  <li><strong>Responsibility</strong>: Does she take responsibility for her actions?</li>
+                  <li><strong>Self-awareness</strong>: Is she aware of her emotions and how they affect others?</li>
+                </ul>
+                <label for="attribute9">Your Rating:</label>
+                <select id="attribute9" name="attribute9" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 10 -->
+              <div class="attribute">
+                <h3>10. Trustworthiness</h3>
+                <ul>
+                  <li><strong>Reliability</strong>: Can you trust her with your thoughts, feelings, and decisions?</li>
+                  <li><strong>Honesty</strong>: Is she honest and transparent?</li>
+                  <li><strong>Dependability</strong>: Can you count on her when it matters?</li>
+                </ul>
+                <label for="attribute10">Your Rating:</label>
+                <select id="attribute10" name="attribute10" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 11 -->
+              <div class="attribute">
+                <h3>11. Independence and Self-Sufficiency</h3>
+                <ul>
+                  <li><strong>Personal Passions</strong>: Does she have her own passions, goals, and ambitions?</li>
+                  <li><strong>Self-reliance</strong>: Is she self-sufficient and not overly dependent on you?</li>
+                  <li><strong>Support for Independence</strong>: Does she encourage your individual growth?</li>
+                </ul>
+                <label for="attribute11">Your Rating:</label>
+                <select id="attribute11" name="attribute11" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 12 -->
+              <div class="attribute">
+                <h3>12. Kindness and Compassion</h3>
+                <ul>
+                  <li><strong>Empathy</strong>: Is she empathetic and caring towards others?</li>
+                  <li><strong>Generosity</strong>: Does she show generosity and warmth?</li>
+                  <li><strong>Altruism</strong>: Is she willing to help others without expecting anything in return?</li>
+                </ul>
+                <label for="attribute12">Your Rating:</label>
+                <select id="attribute12" name="attribute12" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 13 -->
+              <div class="attribute">
+                <h3>13. Adaptability and Flexibility</h3>
+                <ul>
+                  <li><strong>Coping with Change</strong>: Can she handle changes and challenges without becoming overly negative or rigid?</li>
+                  <li><strong>Openness to Growth</strong>: Is she open to learning and growing with you?</li>
+                  <li><strong>Problem-solving</strong>: Does she approach obstacles with a solution-oriented mindset?</li>
+                </ul>
+                <label for="attribute13">Your Rating:</label>
+                <select id="attribute13" name="attribute13" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 14 -->
+              <div class="attribute">
+                <h3>14. Family and Social Dynamics</h3>
+                <ul>
+                  <li><strong>Treatment of Others</strong>: How does she treat her family and friends?</li>
+                  <li><strong>Social Compatibility</strong>: Do you get along with her close circle of people?</li>
+                  <li><strong>Support System</strong>: Is she supportive of your relationships with your friends and family?</li>
+                </ul>
+                <label for="attribute14">Your Rating:</label>
+                <select id="attribute14" name="attribute14" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 15 -->
+              <div class="attribute">
+                <h3>15. Lifestyle Compatibility</h3>
+                <ul>
+                  <li><strong>Social Preferences</strong>: Do you have similar preferences for socializing and downtime?</li>
+                  <li><strong>Habits and Routines</strong>: Are your daily habits and routines complementary?</li>
+                  <li><strong>Health and Wellness</strong>: Do you share similar views on health, diet, and exercise?</li>
+                </ul>
+                <label for="attribute15">Your Rating:</label>
+                <select id="attribute15" name="attribute15" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+            <!-- Attribute 16 -->
+            <div class="attribute">
+                <h3>16. Conflict Resolution Skills</h3>
+                <ul>
+                  <li><strong>Communication During Disagreements</strong>: How does she deal with disagreements or conflicts?</li>
+                  <li><strong>Emotional Regulation</strong>: Can she manage her emotions during tense situations?</li>
+                  <li><strong>Willingness to Compromise</strong>: Is she open to finding mutually beneficial solutions?</li>
+                </ul>
+                <label for="attribute16">Your Rating:</label>
+                <select id="attribute16" name="attribute16" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 17 -->
+              <div class="attribute">
+                <h3>17. Encouragement and Support</h3>
+                <ul>
+                  <li><strong>Motivation</strong>: Does she inspire and motivate you to grow?</li>
+                  <li><strong>Celebration of Success</strong>: Does she celebrate your successes without envy?</li>
+                  <li><strong>Constructive Feedback</strong>: Can she provide feedback in a helpful and supportive manner?</li>
+                </ul>
+                <label for="attribute17">Your Rating:</label>
+                <select id="attribute17" name="attribute17" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 18 -->
+              <div class="attribute">
+                <h3>18. Intuition and Gut Feeling</h3>
+                <ul>
+                  <li><strong>Emotional Comfort</strong>: How do you feel around her? Do you feel at peace, happy, and comfortable?</li>
+                  <li><strong>Trust in Relationship</strong>: Does your gut tell you this relationship is right?</li>
+                  <li><strong>Inner Harmony</strong>: Do you feel a sense of harmony when you are together?</li>
+                </ul>
+                <label for="attribute18">Your Rating:</label>
+                <select id="attribute18" name="attribute18" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 19 -->
+              <div class="attribute">
+                <h3>19. Financial Compatibility</h3>
+                <ul>
+                  <li><strong>Spending Habits</strong>: Are your spending and saving habits aligned?</li>
+                  <li><strong>Financial Goals</strong>: Do you have similar financial objectives?</li>
+                  <li><strong>Money Management</strong>: Can you discuss financial matters openly?</li>
+                </ul>
+                <label for="attribute19">Your Rating:</label>
+                <select id="attribute19" name="attribute19" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 20 -->
+              <div class="attribute">
+                <h3>20. Cultural and Background Compatibility</h3>
+                <ul>
+                  <li><strong>Cultural Values</strong>: Do you respect and appreciate each other’s cultural backgrounds?</li>
+                  <li><strong>Traditions</strong>: Are you willing to embrace each other’s traditions and customs?</li>
+                  <li><strong>Social Expectations</strong>: Do your backgrounds influence your expectations in compatible ways?</li>
+                </ul>
+                <label for="attribute20">Your Rating:</label>
+                <select id="attribute20" name="attribute20" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 21 -->
+              <div class="attribute">
+                <h3>21. Spiritual and Religious Alignment</h3>
+                <ul>
+                  <li><strong>Belief Systems</strong>: Are your spiritual or religious beliefs compatible?</li>
+                  <li><strong>Practice and Participation</strong>: Are you comfortable with each other’s level of religious or spiritual involvement?</li>
+                  <li><strong>Impact on Lifestyle</strong>: Do your beliefs align in ways that support your lifestyle choices?</li>
+                </ul>
+                <label for="attribute21">Your Rating:</label>
+                <select id="attribute21" name="attribute21" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 22 -->
+              <div class="attribute">
+                <h3>22. Energy Levels and Activity Preferences</h3>
+                <ul>
+                  <li><strong>Activity Alignment</strong>: Do you have similar energy levels and preferences for activities?</li>
+                  <li><strong>Pace of Life</strong>: Are you both comfortable with each other’s pace, whether fast or slow?</li>
+                  <li><strong>Recreational Compatibility</strong>: Do you enjoy similar types of recreation and relaxation?</li>
+                </ul>
+                <label for="attribute22">Your Rating:</label>
+                <select id="attribute22" name="attribute22" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 23 -->
+              <div class="attribute">
+                <h3>23. Decision-Making Style</h3>
+                <ul>
+                  <li><strong>Problem-Solving Approach</strong>: Do you approach decision-making similarly?</li>
+                  <li><strong>Leadership Dynamics</strong>: Are you comfortable with how decisions are led and made in the relationship?</li>
+                  <li><strong>Consensus Building</strong>: Can you reach agreements effectively?</li>
+                </ul>
+                <label for="attribute23">Your Rating:</label>
+                <select id="attribute23" name="attribute23" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 24 -->
+              <div class="attribute">
+                <h3>24. Handling Stress and Adversity</h3>
+                <ul>
+                  <li><strong>Coping Mechanisms</strong>: How does she handle stress?</li>
+                  <li><strong>Support During Hard Times</strong>: Is she there for you during difficult periods?</li>
+                  <li><strong>Resilience</strong>: Does she bounce back from setbacks?</li>
+                </ul>
+                <label for="attribute24">Your Rating:</label>
+                <select id="attribute24" name="attribute24" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+              
+              <!-- Attribute 25 -->
+              <div class="attribute">
+                <h3>25. Commitment and Dedication</h3>
+                <ul>
+                  <li><strong>Relationship Goals</strong>: Is she as committed to the relationship as you are?</li>
+                  <li><strong>Effort in Relationship</strong>: Does she invest time and energy to nurture the relationship?</li>
+                  <li><strong>Loyalty</strong>: Is she faithful and dedicated?</li>
+                </ul>
+                <label for="attribute25">Your Rating:</label>
+                <select id="attribute25" name="attribute25" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 - Low Compatibility</option>
+                  <option value="2">2 - Moderate Compatibility</option>
+                  <option value="3">3 - High Compatibility</option>
+                  <option value="4">4 - Very High Compatibility</option>
+                </select>
+              </div>
+                
+        <!-- Calculate and Reset Buttons -->
+        <div class="calculate-section">
+          <button type="button" id="calculate-button" tabindex="0">Calculate Score</button>
+          <button type="reset" id="reset-button" tabindex="0">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Result Tab Panel -->
+<section id="result" class="tab-content" aria-live="polite">
+    <!-- Result Content -->
+    <div class="result-content">
+      <!-- Circular Progress Bar -->
+      <div class="progress-circle">
+        <svg class="progress-ring" width="150" height="150">
+          <circle
+            class="progress-ring__background"
+            stroke="#e6e6e6"
+            stroke-width="10"
+            fill="transparent"
+            r="65"
+            cx="75"
+            cy="75"
+          />
+          <circle
+            class="progress-ring__circle"
+            stroke="#4f46e5"
+            stroke-width="10"
+            fill="transparent"
+            r="65"
+            cx="75"
+            cy="75"
+          />
+        </svg>
+        <div class="progress-text">
+          <span id="">0%</span>
+        </div>
+      </div>
+      <!-- Score Text -->
+      <h2>Your Total Score: <span id="total-score"></span>/100</h2>
+      <p id="interpretation"></p>
+    </div>
+  </section>
+  
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 AKJ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Tab Functionality
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetTab = button.getAttribute('data-tab');
+
+        // Remove active class from all buttons
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Hide all tab contents
+        tabContents.forEach(content => content.classList.remove('active'));
+
+        // Add active class to clicked button
+        button.classList.add('active');
+
+        // Show the target tab content
+        document.getElementById(targetTab).classList.add('active');
+      });
+    });
+
+    // Existing JavaScript code for progress indicator and calculation
+
+    // Update progress indicator on input
+    document.getElementById('compatibility-form').addEventListener('input', function() {
+      let completed = 0;
+      let numAttributes = 25;
+
+      for (let i = 1; i <= numAttributes; i++) {
+        let selectElement = document.getElementById('attribute' + i);
+        if (selectElement.value !== '') {
+          completed++;
+        }
+      }
+
+      document.getElementById('progress').innerText = `You've completed ${completed} out of ${numAttributes} attributes.`;
+    });
+
+    // Calculate score
+    document.getElementById('calculate-button').addEventListener('click', function() {
+      let totalScore = 0;
+      let numAttributes = 25;
+
+      // Loop through each attribute
+      for (let i = 1; i <= numAttributes; i++) {
+        let selectElement = document.getElementById('attribute' + i);
+        let value = parseInt(selectElement.value);
+
+        if (isNaN(value)) {
+          alert('Please select a rating for attribute ' + i + '.');
+          selectElement.focus();
+          return;
+        }
+
+        totalScore += value;
+      }
+
+      // Display the total score
+      document.getElementById('total-score').innerText = totalScore;
+
+      // Provide interpretation
+      let interpretationText = '';
+
+      if (totalScore >= 80) {
+        interpretationText = `<strong>Very High Compatibility</strong>: Excellent potential for a successful and fulfilling relationship. Continue nurturing the relationship and enjoy your strong connection.`;
+      } else if (totalScore >= 60) {
+        interpretationText = `<strong>High Compatibility</strong>: Good potential, with some areas to work on. Address the moderate differences through open communication and compromise.`;
+      } else if (totalScore >= 40) {
+        interpretationText = `<strong>Moderate Compatibility</strong>: The relationship may require significant effort to succeed. Identify key areas of concern and discuss whether they can be reconciled.`;
+      } else {
+        interpretationText = `<strong>Low Compatibility</strong>: Potential challenges that could hinder long-term success. Consider whether the differences are deal-breakers and if professional guidance might help.`;
+      }
+
+      document.getElementById('interpretation').innerHTML = interpretationText;
+
+      // Switch to Result tab
+      document.querySelector('.tab-button[data-tab="result"]').click();
+    });
+
+    // Reset functionality
+    document.getElementById('reset-button').addEventListener('click', function() {
+      // Hide the result section
+      document.getElementById('total-score').innerText = '';
+      document.getElementById('interpretation').innerText = '';
+
+      // Reset progress indicator
+      document.getElementById('progress').innerText = "You've completed 0 out of 25 attributes.";
+
+      // Switch to Instructions tab
+      document.querySelector('.tab-button[data-tab="instructions"]').click();
+    });
+  </script>
+</body>
+</html>
